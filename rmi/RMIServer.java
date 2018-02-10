@@ -68,7 +68,7 @@ public class RMIServer extends UnicastRemoteObject implements RMIServerI {
 		// TO-DO: Instantiate the server class
 		try{
 			rmis = new RMIServer();
-			RMIServerI stub = (RMIServerI) UnicastRemoteObject.exportObject(rmis, 5000);
+			RMIServerI stub = (RMIServerI) UnicastRemoteObject.exportObject(rmis);
 			System.err.println("Server ready");
 			// TO-DO: Bind to RMI registry
 			/*Registry registry = LocateRegistry.getRegistry();
